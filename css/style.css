@@ -1,0 +1,63 @@
+:root {
+    --dark-color:#19283f;
+    --green-color:#33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 10000px;
+}
+.main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+    color: white;
+}
+.navbar {
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active ,
+.navbar .navbar-nav .nav-link:hover ,
+.navbar .navbar-nav .nav-link:focus {
+    color: var(--green-color);
+}
+.navbar .navbar-toggler {
+    border-color: white;
+    color: white;
+    font-size: 25px;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--green-color);
+}
+.navbar .navbar-toggler + .collapse.show {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 30px;
+}
+@media ( min-width: 992px ){
+    .navbar .navbar-toggler + .collapse.show {
+        border-bottom: none;
+        padding-bottom: 0px;
+    }
+}
+.navbar .collapse .search {
+    border-left: 1px solid var(--green-color) ;
+}
+.navbar .collapse .search svg {
+    color: var(--green-color);
+}
+
+.landing {
+    background-color: var(--dark-color);
+    height: calc( 100vh - 72px );
+}
+
+
