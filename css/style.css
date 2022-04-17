@@ -3,6 +3,7 @@
     --green-color:#33d1cc;
     --red-color: #ff3150;
     --yellow-color: #ffc400;
+    --section-color: #eff7fa;
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -59,5 +60,38 @@ body {
     background-color: var(--dark-color);
     height: calc( 100vh - 72px );
 }
-
-
+.main-title::after {
+    content: '';
+    background-color:var(--green-color);
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.features .icon-holder {
+    height: 200px;
+}
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.features .icon-holder .icon {
+    color: var(--green-color);
+}
+.features .feat h4 {
+    color: var(--yellow-color);
+}
