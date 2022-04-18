@@ -7,7 +7,6 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    height: 10000px;
 }
 .main-btn {
     background-color: var(--red-color);
@@ -94,4 +93,57 @@ body {
 }
 .features .feat h4 {
     color: var(--yellow-color);
+}
+.our-work {
+    background-color: var(--section-color);
+}
+.work-link {
+    color: black;
+}
+.work-link.active{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.work-link:hover:not(.active) , .work-link:focus {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.our-work .box {
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.our-work .box::before {
+    content: attr(data-work);
+    width: calc( 100% - 10px );
+    height: calc( 100% - 10px );
+    position: absolute;
+    background-color: #33d1cce1;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transform: translateY(-110%);
+    -webkit-transform: translateY(-110%);
+    -moz-transform: translateY(-110%);
+    -ms-transform: translateY(-110%);
+    -o-transform: translateY(-110%);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.our-work .box:hover::before {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+.stuff .description {
+    max-width: 550px;
 }
