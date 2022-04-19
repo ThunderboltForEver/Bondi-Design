@@ -147,3 +147,69 @@ body {
 .stuff .description {
     max-width: 550px;
 }
+.team {
+    background-color: var(--section-color);
+}
+.team h2 {
+    color: var(--yellow-color);
+}
+.team .team-box h4 {
+    background-color: var(--green-color);
+}
+.project {
+    background-color: var(--dark-color);
+}
+.blog .blog-box {
+    box-shadow: 0 0 0 2px #ececec;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.blog .blog-box img {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.subscribe {
+    background-color: var(--yellow-color);
+}
+input[ type ="email" ] {
+    background-color: transparent;
+    width: 50%;
+    border-color: transparent transparent #fff ;
+    caret-color: white;
+    padding: 10px;
+    color: #fff;
+}
+input[ type ="email" ]:focus {
+    outline: none;
+}
+input[ type ="email" ]::placeholder {
+    color: white;
+}
+.subscribe-btn {
+    background-color: var(--dark-color);
+}
+.footer {
+    background-color: var(--dark-color);
+}
+.footer .copy > span {
+    color: var(--green-color);
+}
+.footer .copy div:nth-child(2) > span {
+    color: var(--yellow-color);
+}
+.footer svg {
+    width: 20px;
+    height: 20px;
+}
+.footer .facebook {
+    background-color: #1877f2;
+}
+.footer .twitter {
+    background-color: #1da1f2;
+}
+.footer .linkedin {
+    background-color: #0077b5;
+}
+.footer .youtube {
+    background-color: #ff0000;
+}
